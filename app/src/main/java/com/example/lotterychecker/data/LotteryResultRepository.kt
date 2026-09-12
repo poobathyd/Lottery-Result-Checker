@@ -27,31 +27,7 @@ class LotteryResultRepository {
                     status = ResultStatus.NOT_FOUND
                 )
             val parsedResult = LotteryResultParser.parse(downloadResultText(resultUrl))
-            val completeResults = parsedResult.completeResults()
-
-            when {
-                parsedResult.validSeries.isNotEmpty() && ticket.series !in parsedResult.validSeries -> {
-                    LotteryCheckResult(
-                        "$drawDate: ${ticket.series} is not a valid series for this draw. " +
-                            "Valid series: ${parsedResult.validSeries.joinToString(", ")}.",
-                        completeResults,
-                        ResultStatus.INVALID
-                    )
-                }
-                else -> parsedResult.findPrize(ticket)
-                    ?.let {
-                        LotteryCheckResult(
-                            "$drawDate: Your ticket won $it. Verify the ticket with the official Gazette before claiming.",
-                            completeResults,
-                            ResultStatus.WIN
-                        )
-                    }
-                    ?: LotteryCheckResult(
-                        "$drawDate: No prize was found for ${ticket.displayValue}.",
-                        completeResults,
-                        ResultStatus.NO_PRIZE
-                    )
-            }
+            evaluateTicket(ticket, parsedResult, drawDate)
         } catch (_: Exception) {
             LotteryCheckResult(
                 "Could not check the result. Please check your internet connection and try again.",
@@ -93,6 +69,27 @@ class LotteryResultRepository {
         const val USER_AGENT = "Mozilla/5.0 (Android) LotteryChecker/1.0"
         const val NETWORK_TIMEOUT_MS = 20_000
     }
+}
+
+internal fun evaluateTicket(
+    ticket: TicketNumber,
+    parsedResult: LotteryResultParser.ParsedLotteryResult,
+    drawDate: String
+): LotteryCheckResult {
+    val completeResults = parsedResult.completeResults()
+    return parsedResult.findPrize(ticket)
+        ?.let {
+            LotteryCheckResult(
+                "$drawDate: Your ticket won $it. Verify the ticket with the official Gazette before claiming.",
+                completeResults,
+                ResultStatus.WIN
+            )
+        }
+        ?: LotteryCheckResult(
+            "$drawDate: No prize was found for ${ticket.displayValue}.",
+            completeResults,
+            ResultStatus.NO_PRIZE
+        )
 }
 
 internal data class TicketNumber(val series: String, val number: String) {

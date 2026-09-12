@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Android App",
+      "type": "android",
+      "request": "launch",
+      "appPackage": "com.example.lotterychecker",
+      "activity": "com.example.lotterychecker.MainActivity"
+    }
+  ]
+}

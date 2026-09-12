@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="122dp"
+    android:viewportWidth="160"
+    android:viewportHeight="130">
+
+    <!-- Kerala map silhouette (faint backdrop) -->
+    <path
+        android:pathData="M116,10 C126,26 120,42 126,60 C132,80 120,100 112,124 C104,104 100,84 97,62 C94,42 103,22 116,10 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.16" />
+
+    <!-- Muthukuda (ceremonial umbrella) -->
+    <path android:pathData="M16,52 A24,24 0 0 1 64,52" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M16,52 q6,7 12,0 q6,7 12,0 q6,7 12,0 q6,7 12,0" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M40,52 L40,22" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M37.5,19 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0 Z" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M40,30 L22,50" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M40,30 L58,50" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M22,59 L22,66" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M40,59 L40,66" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M58,59 L58,66" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+
+    <!-- Kathakali crown and face -->
+    <path android:pathData="M96,44 C96,20 138,20 138,44" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M96,44 q6,-6 10.5,0 q6,-6 10.5,0 q6,-6 10.5,0 q6,-6 10.5,0" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M117,20 L117,12" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M115,10 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 Z" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M105,60 a12,14 0 1,0 24,0 a12,14 0 1,0 -24,0 Z" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M110,57 q3,-3 6,0" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M118,57 q3,-3 6,0" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M113,68 q4,3 8,0" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+
+    <!-- Snake boat (chundan vallam) -->
+    <path android:pathData="M14,104 Q54,118 104,104 L99,99 Q58,110 20,99 Z" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M104,104 q12,-3 15,-15 q-1,10 -9,15" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M34,101 L34,92" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M52,102 L52,93" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M70,102 L70,93" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M88,101 L88,92" android:strokeColor="#FFFFFF" android:strokeWidth="1.6" android:strokeAlpha="0.9" android:strokeLineCap="round" android:strokeLineJoin="round" />
+</vector>
